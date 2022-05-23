@@ -1,0 +1,98 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 62px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.807);
+
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #f2b137;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: -15px;
+      opacity: 0.6;
+    }
+
+    &:after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #f2b137;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
+  }
+
+  p {
+    color: #a8b2d1;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .flat-button {
+    color: #f2b137;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #f2b137;
+    margin-top: 25px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #f2b137;
+      color: #333;
+    }
+  }
+}
+.hero-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  left: 700px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+
+  .hero {
+    height: 500px;
+    filter: grayscale(100);
+    cursor: pointer;
+    border-radius: 12px;
+
+    &:hover {
+      filter: none;
+    }
+  }
+}
